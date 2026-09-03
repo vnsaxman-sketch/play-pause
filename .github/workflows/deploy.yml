@@ -1,4 +1,4 @@
-name: Deploy Play-pause
+name: Deploy PlayPause to GitHub Pages
 
 on:
   push:
