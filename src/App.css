@@ -1,0 +1,183 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(100% - 32px, 680px);
+  margin: 0 auto;
+  padding: 32px 0 56px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: #52627c;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: #52627c;
+  line-height: 1.5;
+}
+
+.card {
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 30px rgb(23 32 51 / 7%);
+}
+
+.warning {
+  border-color: #e15353;
+  background: #fff5f5;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+  color: #29374e;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b9c5d6;
+  border-radius: 10px;
+  background: #fff;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #194ea5;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover {
+  background: #123b80;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.numbers div {
+  padding: 14px;
+  border-radius: 12px;
+  background: #edf3ff;
+}
+
+.numbers span,
+.session p {
+  display: block;
+  margin-bottom: 4px;
+  color: #52627c;
+  font-size: 0.9rem;
+}
+
+.numbers strong {
+  font-size: 1.3rem;
+}
+
+.message {
+  margin: 18px 0 0;
+  color: #a32020;
+  font-weight: 800;
+}
+
+.message.safe {
+  color: #17613c;
+}
+
+.session-list {
+  display: grid;
+  gap: 10px;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+}
+
+.session p {
+  margin: 5px 0 0;
+}
+
+.delete-button {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 8px 10px;
+  background: #6c7789;
+}
+
+.delete-button:hover {
+  background: #4c5666;
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: min(100% - 24px, 680px);
+    padding-top: 24px;
+  }
+
+  .numbers {
+    grid-template-columns: 1fr;
+  }
+
+  .session {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .delete-button {
+    width: 100%;
+  }
+}
+
